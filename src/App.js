@@ -18,16 +18,16 @@ function App() {
     <Router>
       <Routes>
         <Route exact path="/" element={<PageLoop />} />
-        <Route exact path="pageLoop" element={<PageLoop />} />
-        <Route exact path="pageCheatsheetJS" element={<CheatsheetJS />} />
-        <Route exact path="pageJStips" element={<JStips />} />
-        <Route exact path="pageBoxModel" element={<BoxModel />} />
-        <Route exact path="pageShorthand" element={<ShorthandCSS />} />
-        <Route exact path="pageUX/UI" element={<UXUI />} />
-        <Route exact path="pageButtonCSS" element={<ButtonCSS />} />
-        <Route exact path="pageGridAndFlex" element={<GridAndFlex />} />
-        <Route exact path="pageJSDom" element={<JSDom />} />
-        <Route exact path="pageThemeWeb" element={<ThemeWeb />} />
+        <Route  path="pageLoop" element={<PageLoop />} />
+        <Route  path="pageCheatsheetJS" element={<CheatsheetJS />} />
+        <Route  path="pageJStips" element={<JStips />} />
+        <Route  path="pageBoxModel" element={<BoxModel />} />
+        <Route  path="pageShorthand" element={<ShorthandCSS />} />
+        <Route  path="pageUX/UI" element={<UXUI />} />
+        <Route  path="pageButtonCSS" element={<ButtonCSS />} />
+        <Route  path="pageGridAndFlex" element={<GridAndFlex />} />
+        <Route  path="pageJSDom" element={<JSDom />} />
+        <Route  path="pageThemeWeb" element={<ThemeWeb />} />
       </Routes>
     </Router>
 
