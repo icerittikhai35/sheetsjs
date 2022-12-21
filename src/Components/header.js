@@ -19,13 +19,13 @@ function Header() {
                             <NavDropdown.Item href="pageShorthand">ShorthandCSS</NavDropdown.Item>
                             <NavDropdown.Item href="pageGridAndFlex">Grid and Flex</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="pageUX/UI">UX/UI</NavDropdown.Item>
+                            <NavDropdown.Item href="pageUXUI">UX/UI</NavDropdown.Item>
                             <NavDropdown.Item href="pageButtonCSS">UX/UI Button</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                     <Nav>
                         <Nav.Link href="pageJSDom">JavaSript Dom</Nav.Link>
-                        <Nav.Link eventKey={2} href="pageThemeWeb">Theme Web</Nav.Link>
+                        <Nav.Link href="pageThemeWeb">Theme Web</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
