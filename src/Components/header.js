@@ -26,6 +26,7 @@ function Header() {
                     <Nav>
                         <Nav.Link href="pageJSDom">JavaSript Dom</Nav.Link>
                         <Nav.Link href="pageThemeWeb">Theme Web</Nav.Link>
+                        <Nav.Link href="pageAPIFood">API Food</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

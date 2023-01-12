@@ -58,11 +58,37 @@ export default function PageLoop() {
 
     const output = users.map(({ id, name, email }) => {
         return <div>
-            <h2>ID: {id} </h2>
-            <h2>Name: {name}</h2>
-            <h2>Email: {email}</h2>
+            <h4>ID: {id} </h4>
+            <h4>Name: {name}</h4>
+            <h4>Email: {email}</h4>
         </div>
     });
+
+
+    function splitEvenOdd(numbers) {
+        const evenNumbers = [];
+        const oddNumbers = [];
+
+        for (const number of numbers) {
+            if (number % 2 === 0) {
+                evenNumbers.push(number);
+            } else {
+                oddNumbers.push(number);
+            }
+        }
+
+        return [evenNumbers, oddNumbers];
+    }
+
+    const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    const [evenNumbers, oddNumbers] = splitEvenOdd(numbers);
+
+    console.log(`Even numbers: ${evenNumbers}`);
+    console.log(`Odd numbers: ${oddNumbers}`);
+
+
+    //calculator
+
 
     return (
         <>
@@ -72,28 +98,42 @@ export default function PageLoop() {
                 <div >
                     <h1>Loop in JavaScript</h1>
                 </div>
+
                 <div className='boxCss'>
-                    <h2>Array = [82, 75, 48, 64, 36]</h2>
+                    <h4>หา Array ที่มีค่าที่มากกว่า 50</h4>
+                    <h3>Array = [82, 75, 48, 64, 36]</h3>
+                    <h3>For = {passedCount.toString()}</h3>
                 </div>
+
                 <div className='boxCss'>
-                    <h2>For = {passedCount}</h2>
+                    <h4>หา Array ที่มีค่าที่มากกว่า 50 ( เปลี่ยนวิธีเขียน )</h4>
+                    <h3>Array = [82, 75, 48, 64, 36]</h3>
+                    <h3>ForEach = {passedCount2.toString()}</h3>
                 </div>
+
                 <div className='boxCss'>
-                    <h2>ForEach = {passedCount2}</h2>
+                    <h4>.map Array และทำการ X2 ค่าของ Array</h4>
+                    <h3>Array = [82, 75, 48, 64, 36]</h3>
+                    <h3>Map = {map1.toString()}</h3>
                 </div>
+
                 <div className='boxCss'>
-                    <h2>Map = {map1 + ''}</h2>
+                    <h4>.Filter Array และทำการหาค่าของ Array ที่มีมากกว่า6ตัวอักษร</h4>
+                    <h3>data = [{words.toString()}]</h3>
+                    <h3>Filter = {resultF.toString()}</h3>
+                    
                 </div>
+
                 <div className='boxCss'>
-                    <h2>Array =[ {words + "  "}]</h2>
-                    <h2>Filter = {resultF + ' '}</h2>
-                </div>
-                <div className='boxCss'>
+                    <h4>.map Array เอาข้อมูลมาโชว์ loop object </h4>
                     {output}
                 </div>
+
                 <div className='boxCss'>
-
-
+                    <h4>Loop หา เลขคู่เลขคี่</h4>
+                    <h4>numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</h4>
+                    <h3>{evenNumbers.toString()}</h3>
+                    <h3>{oddNumbers.toString()}</h3>
                 </div>
 
             </div>
